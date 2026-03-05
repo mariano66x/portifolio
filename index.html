@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murillo Mariano - Desenvolvedor | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <header class="header">
+        <a href="#home" class="logo">&lt;Dev/Murillo Mariano&gt;</a>
+        <nav class="nav">
+            <a href="#home" data-key="navHome">Início</a>
+            <a href="#habilidades" data-key="navSkills">Habilidades</a>
+            <a href="#projetos" data-key="navProjects">Projetos</a>
+            <a href="#contato" data-key="navContact">Contato</a>
+        </nav>
+        <div class="lang-selector">
+            <button id="lang-br" class="lang-btn active-lang" data-lang="pt" title="Português">
+            <img src="br-bandeira.png" alt="Português" width="30" height="auto">
+        </button>
+        <span>|</span>
+        <button id="lang-en" class="lang-btn" data-lang="en" title="English">
+        <img src="uk-bandeira.png" alt="English" width="30" height="auto">
+    </button>
+</div>
+        <button id="mode-toggle" title="Alternar Modo Escuro/Claro">
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting" data-key="heroGreeting">Olá, eu sou</p>
+            <h1 data-key="heroName">Murillo Mariano</h1>
+            <p class="bio" data-key="heroBio">Apenas um aluno que gosta de fazer site, aplicativos e testar coisas novas, com novos desafios.</p>
+            <a href="#projetos" class="btn primary-btn" data-key="heroButton">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills section">
+        <h2 data-key="skillsTitle">Minhas Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <p>HTML & CSS</p>
+                <div class="bar-container"><div class="bar" data-percent="95"></div></div>
+            </div>
+            <div class="skill-item">
+                <p data-key="skillTeam">Trabalho em equipe</p>
+                <div class="bar-container"><div class="bar" data-percent="85"></div></div>
+            </div>
+             <div class="skill-item">
+                <p data-key="skillComm">Comunicação</p>
+                <div class="bar-container"><div class="bar" data-percent="75"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>Python</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects section">
+        <h2 data-key="projectsTitle">Meus Projetos de Destaque</h2>
+        <div class="projects-grid">
+                
+            <div class="project-card" style="background-image: url('Site-ocorrencias.png'); background-size: cover; background-position: center;">
+    <div class="project-overlay">
+        <h3 data-key="project1Title">Site De Ocorrencias para Escola (Projeto Privado)</h3>
+        <p data-key="project1Desc">Site feito para registrar ocorrencias de alunos na escola, e com isso facilitar o trabalho dos monitores.</p>
+        <p>HTML, CSS e JavaScript</p>
+        <div class="project-links">
+            <a href="#" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+            <a href="#" target="_blank" class="btn small-btn outline-btn">
+                <i class="fab fa-github"></i> 
+                <span data-key="btnCode">Código</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <div class="project-card">
+        <img src="Foto-cardapio.png" alt="Screenshot do Cardápio da Pizzaria Dilicia" class="project-image">
+    
+        <div class="project-overlay">
+        <h3 data-key="project2Title">Site Teste de um Cardapio</h3>
+        <p data-key="project2Desc">Site Teste desenvolvido em HTML e CSS para aula.</p>
+        <p>HTML e CSS</p>
+        <div class="project-links">
+            <a href="https://mariano66x.github.io/trabalho-aula-ti/" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+            <a href="https://github.com/mariano66x/trabalho-aula-ti" target="_blank" class="btn small-btn outline-btn">
+                <i class="fab fa-github"></i> 
+                <span data-key="btnCode">Código</span>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+            <div class="project-card">
+                <div class="project-overlay">
+                    <h3 data-key="project3Title">Carregando...</h3>
+                    <p data-key="project3Desc">Em construção...</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn" data-key="btnDemo">Demo</a>
+                        <a href="#" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> <span data-key="btnCode">Código</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact section">
+        <h2 data-key="contactTitle">Vamos Trabalhar Juntos?</h2>
+        <p data-key="contactSubtitle">Entre em contato para orçamentos, parcerias ou apenas para tomar um café virtual.</p>
+        <form id="contact-form">
+            <input type="text" name="name" data-key="formName" placeholder="Seu Nome" required>
+            <input type="email" name="email" data-key="formEmail" placeholder="Seu Email" required>
+            <textarea name="message" data-key="formMessage" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn primary-btn" data-key="formSend">Enviar Mensagem</button>
+            <p id="form-message" class="message-feedback"></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p data-key="footerText">&copy; 2025 Murillo Mariano Garcia. Feito com paixão e código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
